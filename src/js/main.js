@@ -1,5 +1,6 @@
-import "../css/reset.css";
-import "../css/home.css";
-import "../css/menu.css";
-import "../css/about.css";
-import "../css/styles.css";
+import "../css/reset.css"
+import "../css/styles.css"
+
+import "./home.js"
+import "./menu.js"
+import "./about.js"
