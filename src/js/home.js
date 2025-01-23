@@ -30,3 +30,7 @@ function showHome () {
 
     content.appendChild(divHome)
 }
+
+export {
+    showHome
+}
