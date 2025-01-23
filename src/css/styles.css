@@ -1,7 +1,91 @@
 * {
-    border: 1px solid red;
+    --main-color: #ffff23;
+    --font-border-color: rgb(149, 0, 45);
+    --translucid-black: rgba(0, 0, 0, 0.732);
+    font-family: roboto, sans-serif;
+    /* border: 1px solid red; */
+
+    color: white;
 }
 
-p {
-    color: blue;
+@font-face {
+    font-family: pacifico;
+    src: url(../fonts/Pacifico.ttf);
+}
+
+@font-face {
+    font-family: roboto-flex;
+    src: url(../fonts/RobotoFlex-Regular.ttf);
+}
+
+body {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: minmax(100px, auto) 1fr 40px;
+    gap: 60px;
+
+    background-image: url("../img/gelato.jpg");
+    background-size: cover;
+}
+
+header {
+    width: 100vw;
+    padding: 20px 20px 40px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    background-color: var(--translucid-black);
+}
+
+h1 {
+    font-family: pacifico;
+    font-size: 4rem;
+    color: var(--main-color);
+
+    text-shadow: 
+        -3px 0 var(--font-border-color), 
+        0 3px var(--font-border-color), 
+        3px 0 var(--font-border-color), 
+        0 -3px var(--font-border-color);
+}
+
+nav {
+    justify-self: end;
+}
+
+.nav-btn {
+    border: none;
+    background-color: transparent;
+    margin: 40px 20px 0px 20px;
+
+    font-family: roboto-flex;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: .15rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.content {
+    width: 40vw;
+    justify-self: center;
+    background-color: var(--translucid-black);
+}
+
+footer {
+    width: 100vw;
+    background-color: rgba(28, 1, 1, 0.758);
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    font-size: 0.8rem;
+    font-weight: lighter;
+    letter-spacing: .2rem;
 }

@@ -1,0 +1,36 @@
+.about {
+    display: grid;
+    grid-template-areas:
+        "txt1 txt2"
+        "txt3 txt4"
+        "maps maps";
+
+    padding: 50px 30px;
+    gap: 10px;
+
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+}
+
+.about>p:nth-of-type(1) {
+    grid-area: txt1;
+}
+
+.about>p:nth-of-type(2) {
+    grid-area: txt2;
+}
+
+.about>p:nth-of-type(3) {
+    grid-area: txt3;
+}
+
+.about>p:nth-of-type(4) {
+    grid-area: txt4;
+}
+
+.about>img {
+    grid-area: maps;
+
+    margin-top: 30px;
+}

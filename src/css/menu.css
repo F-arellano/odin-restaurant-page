@@ -1,0 +1,36 @@
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    gap: 50px;
+    
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+}
+
+.card {
+    display: grid;
+    grid-template-areas: 
+    "img"
+    "text";
+    justify-items: center;
+    gap: 20px;
+    text-align: center;
+
+    & img {
+        grid-area: img;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+    }
+
+    & .img-shadow {
+        z-index: 10;
+        grid-area: img;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        box-shadow: inset 1px 1px 20px 1px black;
+    }
+}
